@@ -1,0 +1,73 @@
+# Gestão de Demandas - Configuração do Cursor
+
+## 📋 Visão Geral
+Este é um aplicativo web profissional de gestão de demandas integrado com Trello, desenvolvido com React e Tailwind CSS.
+
+## 🎯 Funcionalidades Principais
+- **Integração com Trello**: Sincronização automática de cards (somente leitura)
+- **Organização por Responsável**: Abas para cada membro do quadro
+- **Status Local**: Controle de status independente do Trello
+- **Ordenação Inteligente**: Cards ordenados por prazo (antigos primeiro)
+- **Filtros Avançados**: Busca e filtros por status, categoria, prazo e responsável
+- **Dashboard**: Visão geral com métricas e gráficos
+- **Responsivo**: Funciona perfeitamente em mobile, tablet e desktop
+
+## 🚀 Tecnologias Utilizadas
+- **React 18.3+** - Framework principal
+- **Tailwind CSS 3.4.17** - Estilização
+- **Zustand** - Gerenciamento de estado
+- **React Router** - Navegação
+- **Axios** - Requisições HTTP
+- **Firebase Firestore** - Armazenamento (opcional)
+- **Framer Motion** - Animações
+- **React Hot Toast** - Notificações
+- **Lucide React** - Ícones
+- **date-fns** - Manipulação de datas
+
+## 📁 Estrutura do Projeto
+```
+src/
+├── components/
+│   ├── layout/          # Header, navegação
+│   ├── cards/           # Componentes de cards
+│   ├── dashboard/       # Componentes do dashboard
+│   ├── filters/         # Filtros e busca
+│   └── common/          # Componentes reutilizáveis
+├── services/            # Serviços (Trello, Firebase, Storage)
+├── hooks/               # Hooks customizados
+├── contexts/            # Contextos React
+├── utils/               # Utilitários e helpers
+├── lib/                 # Configurações de bibliotecas
+└── pages/               # Páginas da aplicação
+```
+
+## 🔧 Configuração Necessária
+1. **Trello API**: Configure as variáveis de ambiente para a API do Trello
+2. **Firebase**: Configure o Firebase para armazenamento (opcional)
+3. **Variáveis de Ambiente**: Crie um arquivo `.env.local` com as credenciais
+
+## 🎨 Design System
+- **Cores**: Sistema de cores baseado em status e alertas
+- **Tipografia**: Inter (Google Fonts)
+- **Componentes**: Sistema de componentes reutilizáveis
+- **Animações**: Transições suaves com Framer Motion
+
+## 📱 Responsividade
+- **Mobile**: 1 coluna de cards
+- **Tablet**: 2 colunas de cards
+- **Desktop**: 3-4 colunas de cards
+
+## 🔒 Segurança
+- **Nunca** exponha credenciais no frontend
+- Use Firebase Functions como proxy para a API do Trello
+- Valide todos os inputs do usuário
+- Configure CORS corretamente
+- Use HTTPS em produção
+
+## 🚀 Deploy
+- **Firebase Hosting**: Configurado com GitHub Actions
+- **Vercel**: Alternativa de deploy
+- **Netlify**: Outra opção de deploy
+
+## 📞 Suporte
+Para suporte, consulte o README.md ou abra uma issue no repositório.

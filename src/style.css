@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-bg-primary text-text-primary;
+  }
+}
+
+@layer components {
+  .card-base {
+    @apply bg-white rounded-lg border border-border-primary shadow-card transition-all duration-300 ease-out;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-card-hover hover:-translate-y-0.5 hover:border-opacity-50;
+  }
+  
+  .status-not-started {
+    @apply border-status-not-started bg-white;
+  }
+  
+  .status-in-progress {
+    @apply border-status-in-progress border-2 bg-blue-50;
+  }
+  
+  .status-change {
+    @apply border-status-change border-2 bg-amber-50;
+  }
+  
+  .status-completed {
+    @apply border-status-completed border-2 bg-emerald-50 opacity-70;
+  }
+  
+  .status-overdue {
+    @apply border-t-4 border-t-alert-overdue;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+  
+  .tab-active {
+    @apply border-b-2 border-accent bg-white text-accent font-medium;
+  }
+  
+  .tab-inactive {
+    @apply border-b-2 border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300;
+  }
+  
+  .skeleton {
+    @apply animate-pulse bg-gray-200 rounded;
+  }
+  
+  .shimmer {
+    @apply relative overflow-hidden;
+  }
+  
+  .shimmer::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
