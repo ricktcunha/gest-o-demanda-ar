@@ -14,14 +14,14 @@ export const CARD_STATUS = {
   IN_PROGRESS: 'em-processo',
   CHANGE: 'alteração',
   COMPLETED: 'concluída',
-} as const;
+};
 
 export const CARD_STATUS_LABELS = {
   [CARD_STATUS.NOT_STARTED]: 'Não iniciada',
   [CARD_STATUS.IN_PROGRESS]: 'Em processo',
   [CARD_STATUS.CHANGE]: 'Alteração',
   [CARD_STATUS.COMPLETED]: 'Concluída',
-} as const;
+};
 
 export const CARD_STATUS_COLORS = {
   [CARD_STATUS.NOT_STARTED]: {
@@ -48,7 +48,7 @@ export const CARD_STATUS_COLORS = {
     text: 'text-emerald-500',
     icon: '🟢',
   },
-} as const;
+};
 
 // Alertas de prazo
 export const DUE_DATE_ALERTS = {
@@ -57,7 +57,7 @@ export const DUE_DATE_ALERTS = {
   TOMORROW: 'amanhã',
   UPCOMING: 'próximo',
   NORMAL: 'normal',
-} as const;
+};
 
 export const DUE_DATE_COLORS = {
   [DUE_DATE_ALERTS.OVERDUE]: {
@@ -90,7 +90,7 @@ export const DUE_DATE_COLORS = {
     icon: '⚪',
     label: '',
   },
-} as const;
+};
 
 // Filtros disponíveis
 export const FILTER_TYPES = {
@@ -98,7 +98,7 @@ export const FILTER_TYPES = {
   CATEGORY: 'category',
   DUE_DATE: 'dueDate',
   RESPONSIBLE: 'responsible',
-} as const;
+};
 
 export const DUE_DATE_FILTERS = {
   OVERDUE: 'atrasadas',
@@ -107,7 +107,7 @@ export const DUE_DATE_FILTERS = {
   THIS_MONTH: 'este-mes',
   NEXT_MONTH: 'proximo-mes',
   NO_DUE_DATE: 'sem-prazo',
-} as const;
+};
 
 // Configurações do Trello
 export const TRELLO_CONFIG = {
@@ -118,7 +118,7 @@ export const TRELLO_CONFIG = {
   },
   TIMEOUT: 10 * 1000, // 10 segundos
   RETRY_ATTEMPTS: 3,
-} as const;
+};
 
 // Configurações do Firebase
 export const FIREBASE_CONFIG = {
@@ -127,14 +127,14 @@ export const FIREBASE_CONFIG = {
     CARDS: 'cards',
     USERS: 'users',
   },
-} as const;
+};
 
 // Breakpoints responsivos
 export const BREAKPOINTS = {
   MOBILE: 640,
   TABLET: 1024,
   DESKTOP: 1280,
-} as const;
+};
 
 // Grid de cards por breakpoint
 export const CARD_GRID_COLUMNS = {
@@ -142,7 +142,7 @@ export const CARD_GRID_COLUMNS = {
   TABLET: 2,
   DESKTOP: 3,
   LARGE: 4,
-} as const;
+};
 
 // Animações
 export const ANIMATIONS = {
@@ -156,7 +156,7 @@ export const ANIMATIONS = {
     EASE_IN: 'ease-in',
     EASE_IN_OUT: 'ease-in-out',
   },
-} as const;
+};
 
 // Mensagens de erro
 export const ERROR_MESSAGES = {
@@ -166,12 +166,12 @@ export const ERROR_MESSAGES = {
   SYNC_FAILED: 'Falha na sincronização. Tente novamente.',
   NETWORK_ERROR: 'Erro de rede. Verifique sua conexão com a internet.',
   UNKNOWN_ERROR: 'Erro desconhecido. Tente novamente.',
-} as const;
+};
 
 // Mensagens de sucesso
 export const SUCCESS_MESSAGES = {
   SYNC_COMPLETED: 'Sincronização concluída com sucesso!',
   STATUS_UPDATED: 'Status atualizado com sucesso!',
   FILTERS_CLEARED: 'Filtros limpos!',
-} as const;
+};
 
