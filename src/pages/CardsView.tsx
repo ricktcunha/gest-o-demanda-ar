@@ -1,4 +1,4 @@
-import React from 'react';
+import TrelloTest from '../components/TrelloTest';
 
 /**
  * Página principal de visualização de cards - Versão simplificada para teste
@@ -15,6 +15,9 @@ const CardsView = () => {
         </p>
       </div>
 
+      {/* Teste de conexão com Trello */}
+      <TrelloTest />
+
       <div className="bg-white rounded-lg shadow p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">
           🎉 Aplicação funcionando!
@@ -24,7 +27,7 @@ const CardsView = () => {
         </p>
         <ul className="list-disc list-inside text-gray-600 space-y-2">
           <li>Configure as credenciais do Trello no arquivo .env.local</li>
-          <li>Teste a sincronização com o Trello</li>
+          <li>Teste a sincronização com o Trello usando o botão acima</li>
           <li>Explore as funcionalidades do sistema</li>
         </ul>
         
@@ -35,6 +38,7 @@ const CardsView = () => {
             <li>Copie sua API Key e Token</li>
             <li>Crie arquivo .env.local na raiz do projeto</li>
             <li>Adicione suas credenciais</li>
+            <li>Reinicie o servidor: <code className="bg-blue-100 px-1 rounded">npm run dev</code></li>
           </ol>
         </div>
       </div>

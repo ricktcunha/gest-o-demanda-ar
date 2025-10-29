@@ -1,7 +1,6 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import CardsView from './pages/CardsView';
+import CardsView from './pages/CardsView.tsx';
 
 /**
  * Componente principal da aplicação - Versão simplificada
